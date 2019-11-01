@@ -36,14 +36,24 @@ body {
   justify-content: space-between;
 }
 
-.flex-column{
+.is-flex-four {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
 .wrapper {
   max-width: 1192px;
-  padding: 0px;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -51,6 +61,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 ul {
@@ -70,6 +84,10 @@ ul {
 .navbar-container .navbar-primary {
   height: 30px;
   background: #eee;
+}
+
+.navbar-primary ul {
+  display: block;
 }
 
 .navbar-container .navbar-section {
@@ -108,6 +126,10 @@ ul {
   padding: 0 20px;
 }
 
+.hero-container .cover {
+  height: 60vh;
+}
+
 .wrapper .section-container {
   background: grey;
 }
@@ -115,6 +137,11 @@ ul {
 .section-container .latest-news {
   display: flex;
   flex-flow: row wrap;
+}
+
+.section-container .latest-news .content {
+  display: flex;
+  flex-direction: column;
 }
 
 .latest-news div {
@@ -167,8 +194,12 @@ ul {
   background: cadetblue;
 }
 
-.footer .media {  
+.footer .media {
   margin-bottom: 15px;
+}
+
+.footer-media {
+  padding: 3em 0 2em;
 }
 
 .footer-details {
@@ -176,21 +207,71 @@ ul {
   height: 70px;
 }
 
-@media (min-width: 1600px) {
-  .hero-container .cover {
-    height: 60vh;
-  }
+@media (max-width: 1600px) {
+
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .hero-container .cover .is-one h2 {
+    font-size: 23px;
+  }
+
   .is-flex-four {
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: 33.3%;
+    max-width: 33.33%;
   }
 }
 
-@media (min-width: 768px) {
-  .footer-media {
-    padding: 3em 0 2em;
+@media (max-width: 818px) {
+  .navbar-container .navbar-primary .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-primary,
+  .navbar-section {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .header-container {
+    height: 45px;
+  }
+
+  .hero-container .cover {
+    flex-direction: column;
+    height: 715px;
+  }
+
+  .hero-container .cover article.is-four {
+    flex-basis: 245px;
+  }
+
+  .hero-container .cover article.is-one {
+    flex-basis: 245px;
+  }
+
+  .is-flex-four {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .section-container .latest-news .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-container .latest-news .content .img {
+    flex: 1;
+    background: royalblue;
+  }
+
+  .section-container .latest-news .content .info {
+    flex: 5;
+    background: orangered;
   }
 }
