@@ -10,6 +10,10 @@ body {
   border: 3px solid red;
 }
 
+.clear {
+  clear: both;
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,23 @@ body {
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1192px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.flex-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -117,6 +138,44 @@ ul {
   background: olivedrab;
 }
 
+.popular .most-popular {
+  float: left;
+  width: 33.3%;
+  background: blue;
+  height: 300px;
+  margin-bottom: 24px;
+}
+
+.popular .most-popular:nth-child(2n+1) {
+  background: blueviolet;
+}
+
+.section-container .latest-deals {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.latest-deals div {
+  height: 200px;
+}
+
+.latest-deals div:nth-child(2n + 1) {
+  background: palegreen;
+}
+
+.footer {
+  background: cadetblue;
+}
+
+.footer .media {  
+  margin-bottom: 15px;
+}
+
+.footer-details {
+  background: chocolate;
+  height: 70px;
+}
+
 @media (min-width: 1600px) {
   .hero-container .cover {
     height: 60vh;
@@ -131,5 +190,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-
+  .footer-media {
+    padding: 3em 0 2em;
+  }
 }
