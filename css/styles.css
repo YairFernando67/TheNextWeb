@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 3px solid red;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-one {
+  flex: 1;
+}
+
+.is-four {
+  flex: 4;
+}
+
+.is-two {
+  flex: 2;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+}
+
+.header-container {
+  height: 80px;
+  background: #ccc;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container .navbar-primary {
+  height: 30px;
+  background: #eee;
+}
+
+.navbar-container .navbar-section {
+  height: 50px;
+  background: rgb(112, 96, 96);
+}
+
+.hero-container {
+  background: green;
+}
+
+.hero-container .cover {
+  display: flex;
+}
+
+.hero-container .cover .is-four {
+  background: rebeccapurple;
+}
+
+.hero-container .cover .is-two {
+  background: firebrick;
+}
+
+.cover .is-two article.cover-story {
+  background: greenyellow;
+}
+
+.cover .is-two article.cover-story-2 {
+  background: red;
+}
+
+.hero-container .wrapper {
+  max-width: 1192px;
+  margin: 0 auto;
+  background: firebrick;
+  padding: 0 20px;
+}
+
+.wrapper .section-container {
+  background: grey;
+}
+
+.section-container .latest-news {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.latest-news div {
+  height: 200px;
+}
+
+.latest-news div:nth-child(2n + 1) {
+  background: palegreen;
+}
+
+.section-container .latest-founding-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.latest-founding-items div {
+  min-height: 200px;
+}
+
+.latest-founding-items div:nth-child(2n +1) {
+  background: olivedrab;
+}
+
+@media (min-width: 1600px) {
+  .hero-container .cover {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .is-flex-four {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
