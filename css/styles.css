@@ -50,6 +50,10 @@ body {
   flex-direction: column;
 }
 
+.padd_right10 {
+  padding-right: 15px;
+}
+
 .wrapper {
   max-width: 1192px;
   padding: 0;
@@ -293,20 +297,31 @@ ul {
   max-width: 1192px;
   margin: 0 auto;
   background: firebrick;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 .hero-container .cover {
   height: 60vh;
 }
 
-.wrapper .section-container {
-  background: grey;
+.wrapper .section-container h2 {
+  color: #000;
+  text-decoration: none;
 }
 
 .section-container .latest-news {
   display: flex;
   flex-flow: row wrap;
+}
+
+.latest-news .img {
+  width: 100%;
+  height: 350px;
+}
+
+.latest-news .img img {
+  width: 100%;
+  height: 100%;
 }
 
 .section-container .latest-news .content {
@@ -315,11 +330,29 @@ ul {
 }
 
 .latest-news div {
-  height: 200px;
+  height: 250px;
 }
 
-.latest-news div:nth-child(2n + 1) {
-  background: palegreen;
+.latest-news div h6 {
+  margin: 10px 0 5px 0;
+  font-size: 1.0em;
+}
+
+.latest-news div h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f42;
+}
+
+.latest-news div span,
+.latest-news div span a {
+  color: #aaa;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.latest-news div span a:hover {
+  color: rgb(10, 10, 10);
 }
 
 .section-container .latest-founding .nav-menu ul {
@@ -429,7 +462,16 @@ ul {
   }
 
   .hero-container .cover .is-two .details h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .wrapper .section-container .latest-news article:nth-child(3) .content,
+  .wrapper .section-container .latest-news article:nth-child(6) .content {
+    padding-right: 0;
+  }
+
+  .latest-news div h6 {
+    font-size: 0.9em;
   }
 }
 
@@ -472,11 +514,13 @@ ul {
 
   .hero-container .cover {
     flex-direction: column;
-    height: 1080px;
+    height: 1180px;
   }
 
-  .hero-container .cover article.is-four {
+  .hero-container .cover article.is-four,
+  .hero-container .cover div {
     flex-basis: 245px;
+    flex: none;
   }
 
   .hero-container .cover article.is-one {
@@ -503,7 +547,6 @@ ul {
   .section-container .latest-news .content .info,
   .section-container .latest-deals .content .info {
     flex: 5;
-    background: orangered;
   }
 
   .section-container .latest-founding .nav-menu ul {
@@ -529,5 +572,32 @@ ul {
   .hero-container .cover .is-two .details h2 {
     font-size: 1.3em;
   }
+
+  .latest-news .is-flex-four,
+  .latest-news div,
+  .latest-news .img {
+    height: 80px;
+  }
+
+  .latest-news .is-flex-four {
+    margin: 10px 0;
+  }
+
+  .latest-news .img {
+    max-width: 80px;
+  }
+
+  .latest-news .info {
+    padding: 0 10px;
+  }
+
+  .latest-news .img img {
+    height: 100%;
+  }
+
+  .latest-news .padd_right10 {
+    padding-right: 0;
+  }
+
 }
 
