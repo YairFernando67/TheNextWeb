@@ -73,6 +73,22 @@ body {
   align-items: center;
 }
 
+.funding-head {
+  background: #f74;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.funding-head-base {
+  display: flex;
+  height: 57px;
+  flex-direction: column;
+  background: rgba(255,68,34,.08);
+  justify-content: center;
+}
+
 .hidden {
   display: none;
 }
@@ -338,6 +354,28 @@ ul {
   font-size: 1.0em;
 }
 
+.section-container .latest-founding-items a {
+  text-decoration: none;
+}
+
+h4,
+h5 {
+  margin: 0;
+  margin-left: 80px;
+}
+
+.Atback{
+  background: azure;
+}
+
+.latest-founding-items .is-flex-four header img {
+  position: absolute;
+  width: 60px;
+  top: 13px;
+  left: 7px;
+  z-index: 2;
+}
+
 .latest-news div h6:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -366,12 +404,36 @@ ul {
   flex-flow: row wrap;
 }
 
-.latest-founding-items div {
-  min-height: 200px;
+.latest-founding h2 {
+  color: #f42 !important;
 }
 
-.latest-founding-items div:nth-child(2n +1) {
-  background: olivedrab;
+.latest-founding .nav-menu ul {
+  list-style: none;
+}
+
+.latest-founding .nav-menu ul li {
+  padding: 0 20px 0 10px;
+}
+
+.latest-founding .nav-menu ul li a {
+  color: #f42;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.latest-founding .nav-menu ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.section-container .latest-founding .nav-menu {
+  display: flex;
+}
+
+.latest-founding-items div header img {
+  width: 100%;
+
 }
 
 .popular .most-popular {
@@ -473,6 +535,10 @@ ul {
   .latest-news div h6 {
     font-size: 0.9em;
   }
+
+  .section-container .latest-founding .nav-menu ul li:first-child {  
+    padding: 0;
+  }  
 }
 
 @media (max-width: 850px) {
@@ -514,7 +580,7 @@ ul {
 
   .hero-container .cover {
     flex-direction: column;
-    height: 1180px;
+    height: 1250px;
   }
 
   .hero-container .cover article.is-four,
@@ -584,7 +650,7 @@ ul {
   }
 
   .latest-news .img {
-    max-width: 80px;
+    max-width:800 80px;
   }
 
   .latest-news .info {
@@ -599,5 +665,29 @@ ul {
     padding-right: 0;
   }
 
+  .section-container .latest-founding h2 {
+    margin-bottom: 0;
+  }
+
+  .section-container .latest-founding .nav-menu ul {
+    margin-top: 10px;
+  }
+  .section-container .latest-founding .nav-menu ul li  {
+    padding: 0;
+    margin-bottom: 7px;
+  }
+
+}
+
+@media (max-width: 650px){
+  .hero-container .cover {
+    height: 1050px;
+  }
+}
+
+@media (max-width: 550px){
+  .hero-container .cover {
+    height: 900px;
+  }
 }
 
