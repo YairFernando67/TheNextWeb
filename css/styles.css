@@ -176,9 +176,23 @@ ul {
   text-decoration: none;
 }
 
+.footer .media li {
+  list-style: none;
+  color: #aaa;
+  margin: 0 10px;
+}
+
+.footer .menu-links li {
+  padding: 3px 10px;
+}
+
 .navbar-container .navbar-section ul li {
   font-size: 14px;
   padding: 2px 10px;
+}
+
+.latest-founding-items div header img {
+  width: 100%;
 }
 
 .latest-news .img img {
@@ -190,8 +204,25 @@ ul {
   text-decoration: none;
 }
 
+.latest-founding-items .is-flex-four a {
+  position: relative;
+}
+
 .navbar-container .navbar-section div a {
   display: block;
+}
+
+.footer .menu-links li a {
+  font-size: 0.8em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-details .wrapper span a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar-container .navbar-section ul li a {
@@ -202,11 +233,30 @@ ul {
   color: rgb(10, 10, 10);
 }
 
+.latest-founding .nav-menu ul li a {
+  color: #f42;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.most-popular .info ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar-container ul li a:hover {
+  color: #fff;
+}
+
 .navbar-container .navbar-section div a:hover {
   background-image: url(../img/search-icon-dark.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 19.5px;
+}
+
+.footer .menu-links li a:hover {
+  color: #fff;
 }
 
 .navbar-container .navbar-section ul li a:hover {
@@ -219,6 +269,20 @@ ul {
   left: 3%;
 }
 
+.latest-founding .nav-menu ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.most-popular .info ul li a:hover {
+  color: #000;
+}
+
+.most-popular .content .details ul li a,
+.most-popular .content .details ul li {
+  font-size: 0.8em;
+}
+
 .most-popular .content .details ul li a,
 .hero-container .cover .is-four .details ul li a {
   text-decoration: none;
@@ -228,17 +292,6 @@ ul {
   padding: 0 20px 0 10px;
 }
 
-.latest-founding .nav-menu ul li a {
-  color: #f42;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.latest-founding .nav-menu ul li a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
 .most-popular .info ul li {
   border-bottom: 1px solid #eee;
   font-size: 0.9em;
@@ -246,53 +299,8 @@ ul {
   margin: 5px;
 }
 
-.most-popular .info ul li a {
-  color: #555;
-  text-decoration: none;
-}
-
-.most-popular .info ul li a:hover {
-  color: #000;
-}
-
-.footer .media li {
-  list-style: none;
-  color: #aaa;
-  margin: 0 10px;
-}
-
-.footer .menu-links li {
-  padding: 3px 10px;
-}
-
-.footer .menu-links li a {
-  font-size: 0.8em;
-  color: #aaa;
-  text-decoration: none;
-}
-
-.footer .menu-links li a:hover {
-  color: #fff;
-}
-
-.footer-details .wrapper span a {
-  color: #fff;
-  font-size: 1.2em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .navbar-container .navbar-primary ul li:first-child {
   padding-left: 10px;
-}
-
-.latest-founding-items .is-flex-four a {
-  position: relative;
-}
-
-.most-popular .content .details ul li a,
-.most-popular .content .details ul li {
-  font-size: 0.8em;
 }
 
 .navbar-container .navbar-primary ul:first-child li:first-child a {
@@ -312,10 +320,6 @@ ul {
 
 .navbar-container ul {
   list-style: none;
-}
-
-.navbar-container ul li a:hover {
-  color: #fff;
 }
 
 .navbar-container ul:first-child {
@@ -348,10 +352,6 @@ ul {
   z-index: 2;
 }
 
-.latest-founding-items div header img {
-  width: 100%;
-}
-
 .navbar-container .navbar-section div a img {
   border: 0;
   padding: 15px;
@@ -382,6 +382,11 @@ ul {
   position: relative;
 }
 
+.most-popular .gradient {
+  margin: 0 !important;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3) 40%, rgba(0, 0, 0, 0.3)) !important;
+}
+
 .most-popular .gradient,
 .cover .is-two article .gradient {
   position: absolute;
@@ -392,11 +397,6 @@ ul {
   right: 0;
   z-index: 1;
   background-image: linear-gradient(to bottom right, rgba(78, 78, 78, 0.3) 50%, rgba(0, 0, 0, 0.8)) !important;
-}
-
-.most-popular .gradient {
-  margin: 0 !important;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3) 40%, rgba(0, 0, 0, 0.3)) !important;
 }
 
 .is-four .gradient {
