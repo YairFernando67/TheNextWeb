@@ -4,5 +4,6 @@ linters:
 files:
     ignore:
         - 'css/Normalize/*'
+        
 
     
