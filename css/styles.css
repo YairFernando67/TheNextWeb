@@ -33,6 +33,7 @@ body {
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .is-flex-four {
@@ -355,8 +356,7 @@ ul {
 
 .hero-container .wrapper {
   max-width: 1192px;
-  margin: 0 auto;
-  background: firebrick;
+  margin: 0 auto;  
   padding: 0 12px;
 }
 
@@ -599,6 +599,17 @@ h5 {
   color: #000;
 }
 
+.section-container .flex h2,
+.section-container .flex div {
+  color: #f42;
+  padding-right: 20px;
+}
+
+.section-container .flex h2:hover,
+.section-container .flex div:hover {
+  color: #000;  
+}
+
 .section-container .latest-deals {
   display: flex;
   flex-flow: row wrap;
@@ -609,12 +620,35 @@ h5 {
   flex-direction: column;
 }
 
-.latest-deals div {
-  height: 200px;
+.section-container .latest-deals .is-flex-four .content .info,
+.section-container .latest-deals .is-flex-four .content .info div {
+  margin-top: 5px;
 }
 
-.latest-deals div:nth-child(2n + 1) {
-  background: palegreen;
+.section-container .latest-deals .is-flex-four .content .info a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.section-container .latest-deals .is-flex-four .content .info a:hover {
+  color: #f42;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.section-container .latest-deals .is-flex-four .content .info div small {
+  color: #555;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+.section-container .latest-deals .is-flex-four .content img {
+  width: 100%;  
+}
+
+.section-container .latest-deals .is-flex-four {
+  padding: 0px 20px 20px 0px;
 }
 
 .footer {
@@ -850,6 +884,10 @@ h5 {
 
   .popular .most-popular {
     padding: 0;
+  }
+
+  .section-container .latest-deals .is-flex-four .content .img {
+    margin-right: 20px;  
   }
 }
 
