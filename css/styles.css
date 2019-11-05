@@ -89,6 +89,45 @@ body {
   justify-content: center;
 }
 
+.funding-base {
+  border-bottom: 1px solid salmon ;
+}
+
+.funding-base {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 101, 74, 0.068);  
+}
+
+.funding-base-base {
+  background: rgba(255, 101, 74, 0.068);
+  color: rgb(98, 98, 98);
+  padding: 10px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.funding-base-base small {
+  color: rgb(110, 110, 110);
+}
+
+.funding-base span:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.funding-base span {
+  margin: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: rgb(98, 98, 98);
+}
+
+.funding-base span img {
+  margin-right: 5px;
+}
+
 .hidden {
   display: none;
 }
@@ -364,10 +403,6 @@ h5 {
   margin-left: 80px;
 }
 
-.Atback{
-  background: azure;
-}
-
 .latest-founding-items .is-flex-four header img {
   position: absolute;
   width: 60px;
@@ -433,7 +468,18 @@ h5 {
 
 .latest-founding-items div header img {
   width: 100%;
+}
 
+.latest-founding-items .is-flex-four {
+  padding-right: 20px;  
+}
+
+.latest-founding-items .is-flex-four:last-child {
+  padding-right: 0px;
+}
+
+.latest-founding-items .is-flex-four a {
+  position: relative;
 }
 
 .popular .most-popular {
@@ -505,7 +551,7 @@ h5 {
     justify-content: flex-start;
   }
 
-  .latest-founding-items div:last-child {
+  .latest-founding-items div:nth-child(4) {
     display: none;
   }
 
@@ -677,6 +723,13 @@ h5 {
     margin-bottom: 7px;
   }
 
+  .latest-founding-items .is-flex-four {
+    padding-bottom: 20px;  
+  }
+
+  .latest-founding-items .is-flex-four header img {
+    top: 31px;
+  }
 }
 
 @media (max-width: 650px){
