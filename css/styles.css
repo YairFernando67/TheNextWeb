@@ -504,16 +504,20 @@ ul {
   cursor: pointer;
 }
 
-.most-popular .content .details ul li img,
-.hero-container .cover .is-four .details ul li img,
-.hero-container .cover .cover-story .details ul li img,
-.hero-container .cover .cover-story-2 .details ul li img {
+.most-popular .content .details ul li img {
   width: 27px;
   height: 27px;
 }
 
 .section-container .latest-deals .is-flex-four .content img {
   width: 100%;
+}
+
+.hero-container .cover .is-four .details ul li img,
+.hero-container .cover .cover-story .details ul li img,
+.hero-container .cover .cover-story-2 .details ul li img {
+  width: 27px;
+  height: 27px;
 }
 
 .most-popular .content .details ul li,
