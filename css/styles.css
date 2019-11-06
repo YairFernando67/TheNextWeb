@@ -51,11 +51,6 @@ body {
   flex-direction: column;
 }
 
-section h6,
-article h6 {
-  display: none;
-}
-
 .padd_right10 {
   padding-right: 15px;
 }
@@ -589,6 +584,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
 .section-container .latest-founding-items {
