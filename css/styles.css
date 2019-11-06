@@ -528,7 +528,7 @@ ul {
 .most-popular .content .details ul li,
 .hero-container .cover .is-four .details ul li {
   padding: 3px 7px;
-  color: hsla(0, 0%, 100linear-gradient(45deg, black, transparent)%, 0.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .hero-container .cover .is-two .cover-story,
