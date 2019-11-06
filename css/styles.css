@@ -1,0 +1,960 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-one {
+  flex: 1;
+}
+
+.is-four {
+  flex: 4;
+}
+
+.is-two {
+  flex: 2;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.is-flex-four {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.padd_right10 {
+  padding-right: 15px;
+}
+
+.wrapper {
+  max-width: 1192px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.flex-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-inline-ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.funding-head {
+  background: #f74;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.funding-head-base {
+  display: flex;
+  height: 57px;
+  flex-direction: column;
+  background: rgba(255, 68, 34, 0.08);
+  justify-content: center;
+}
+
+.funding-base {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid salmon;
+  background: rgba(255, 101, 74, 0.068);
+}
+
+.funding-base-base {
+  background: rgba(255, 101, 74, 0.068);
+  color: rgb(98, 98, 98);
+  padding: 10px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.funding-base-base small {
+  color: rgb(110, 110, 110);
+}
+
+.funding-base span {
+  margin: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: rgb(98, 98, 98);
+}
+
+.latest-news div span,
+.latest-news div span a {
+  color: #aaa;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.funding-base span:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.funding-base span img {
+  margin-right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.header-container {
+  height: 80px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-container .logo {
+  width: 100px;
+  display: none;
+}
+
+.navbar-container .navbars {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar-container .navbar-primary {
+  height: 32px;
+  background: rgb(10, 10, 10);
+}
+
+.navbar-container ul li {
+  padding: 2px 8px;
+  font-size: 13px;
+}
+
+.navbar-container ul li a {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-decoration: none;
+}
+
+.footer .media li {
+  list-style: none;
+  color: #aaa;
+  margin: 0 10px;
+}
+
+.footer .menu-links li {
+  padding: 3px 10px;
+}
+
+.navbar-container .navbar-section ul li {
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+.latest-founding-items div header img {
+  width: 100%;
+}
+
+.latest-news .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-container .latest-founding-items a {
+  text-decoration: none;
+}
+
+.latest-founding-items .is-flex-four a {
+  position: relative;
+}
+
+.navbar-container .navbar-section div a {
+  display: block;
+}
+
+.footer .menu-links li a {
+  font-size: 0.8em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-details .wrapper span a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-container .navbar-section ul li a {
+  color: #aaa;
+}
+
+.latest-news div span a:hover {
+  color: rgb(10, 10, 10);
+}
+
+.latest-founding .nav-menu ul li a {
+  color: #f42;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.most-popular .info ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar-container ul li a:hover {
+  color: #fff;
+}
+
+.navbar-container .navbar-section div a:hover {
+  background-image: url(../img/search-icon-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 19.5px;
+}
+
+.footer .menu-links li a:hover {
+  color: #fff;
+}
+
+.navbar-container .navbar-section ul li a:hover {
+  color: #000;
+}
+
+.most-popular .content .details {
+  position: absolute;
+  top: 62%;
+  left: 3%;
+}
+
+.latest-founding .nav-menu ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.most-popular .info ul li a:hover {
+  color: #000;
+}
+
+.latest-founding .nav-menu ul li {
+  padding: 0 20px 0 10px;
+}
+
+.most-popular .info ul li {
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+  padding: 5px;
+  margin: 5px;
+}
+
+.most-popular .content .details ul li a,
+.most-popular .content .details ul li {
+  font-size: 0.8em;
+}
+
+.most-popular .content .details ul li a,
+.hero-container .cover .is-four .details ul li a {
+  text-decoration: none;
+}
+
+.navbar-container .navbar-primary ul li:first-child {
+  padding-left: 10px;
+}
+
+.navbar-container .navbar-primary ul:first-child li:first-child a {
+  color: #fff;
+}
+
+.navbar-primary ul.hidden {
+  display: block;
+}
+
+.navbar-primary ul,
+.navbar-primary ul.flex-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container ul {
+  list-style: none;
+}
+
+.navbar-container ul:first-child {
+  margin-left: 10px;
+}
+
+.navbar-container ul:last-child {
+  margin-right: 10px;
+}
+
+.navbar-container .navbar-section {
+  height: 50px;
+  background: #fff;
+}
+
+.latest-news div {
+  height: 250px;
+}
+
+.navbar-container .navbar-section div {
+  width: 50px;
+  border-left: 1px solid #eee;
+}
+
+.latest-founding-items .is-flex-four header img {
+  position: absolute;
+  width: 60px;
+  top: 13px;
+  left: 7px;
+  z-index: 2;
+}
+
+.footer .media li img {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 45px;
+  padding: 12px;
+  text-align: center;
+  width: 45px;
+}
+
+.navbar-container .navbar-section div a img {
+  border: 0;
+  padding: 15px;
+  width: 100%;
+  color: red;
+}
+
+.hero-container .cover {
+  display: flex;
+  height: 60vh;
+}
+
+.hero-container .cover .is-four img,
+.hero-container .is-two .cover-story img,
+.hero-container .is-two .cover-story-2 img {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.hero-container .is-two .cover-story,
+.hero-container .is-two .cover-story-2 {
+  height: 100%;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.hero-container .cover .is-four {
+  position: relative;
+}
+
+.most-popular .gradient {
+  margin: 0 !important;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3) 40%, rgba(0, 0, 0, 0.3)) !important;
+}
+
+.is-four .gradient {
+  position: absolute;
+  margin: 5px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.7) 15%, rgba(0, 0, 0, 1));
+}
+
+.most-popular .gradient,
+.cover .is-two article .gradient {
+  position: absolute;
+  margin: 5px 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, rgba(78, 78, 78, 0.3) 50%, rgba(0, 0, 0, 0.8)) !important;
+}
+
+.hero-container .cover .is-four .details,
+.hero-container .cover .cover-story .details,
+.hero-container .cover .cover-story-2 .details {
+  bottom: 4px;
+  left: 4px;
+  padding: 14px 12px;
+  position: absolute;
+  right: 4px;
+  z-index: 2;
+}
+
+.most-popular h2 {
+  margin-bottom: 8px;
+}
+
+.wrapper .section-container h2 {
+  color: #000;
+  text-decoration: none;
+}
+
+.section-container .flex h2,
+.section-container .flex div {
+  color: #f42;
+  padding-right: 20px;
+}
+
+.most-popular .content .details h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.hero-container .cover small {
+  color: #fff;
+  font-size: 1em;
+}
+
+.most-popular .content .details small,
+.most-popular .content .details h2 {
+  color: #fff !important;
+}
+
+.section-container .flex h2:hover,
+.section-container .flex div:hover {
+  color: #000;
+}
+
+.hero-container .cover .is-four .details h2,
+.hero-container .cover .cover-story .details h2,
+.hero-container .cover .cover-story-2 .details h2 {
+  font-size: 3em;
+  color: #fff;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.latest-news .img {
+  width: 100%;
+  height: 350px;
+}
+
+.most-popular .content .img,
+.most-popular .content .img img {
+  height: 250px;
+}
+
+.most-popular .content .img,
+.most-popular .content .img img,
+.most-popular .info .img,
+.most-popular .info .img img {
+  width: 100%;
+}
+
+.most-popular .info .img,
+.most-popular .info .img img {
+  height: 80px;
+}
+
+.footer .media li:hover img {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #333;
+  cursor: pointer;
+}
+
+.most-popular .content .details ul li img {
+  width: 27px;
+  height: 27px;
+}
+
+.section-container .latest-deals .is-flex-four .content img {
+  width: 100%;
+}
+
+.hero-container .cover .is-four .details ul li img,
+.hero-container .cover .cover-story .details ul li img,
+.hero-container .cover .cover-story-2 .details ul li img {
+  width: 27px;
+  height: 27px;
+}
+
+.most-popular .content .details ul li,
+.hero-container .cover .is-four .details ul li {
+  padding: 3px 7px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.hero-container .cover .is-two .cover-story,
+.hero-container .cover .is-two .cover-story-2,
+.most-popular .content .img {
+  position: relative;
+}
+
+.hero-container .cover .cover-story .details h2,
+.hero-container .cover .cover-story-2 .details h2 {
+  font-size: 1.6em;
+}
+
+.hero-container .cover .is-two .details ul li {
+  padding: 3px 7px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.hero-container .wrapper {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.section-container .latest-news {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-container .latest-news .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-news div h6 {
+  margin: 10px 0 5px 0;
+  font-size: 1em;
+}
+
+h4,
+h5 {
+  margin: 0;
+  margin-left: 80px;
+}
+
+.latest-news div h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f42;
+}
+
+.most-popular .info ul {
+  padding: 0 20px;
+  color: #f42;
+}
+
+.section-container .latest-founding .nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.section-container .latest-founding-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-container .latest-founding .nav-menu {
+  display: flex;
+}
+
+.latest-founding-items .is-flex-four {
+  padding-right: 20px;
+}
+
+.latest-founding-items .is-flex-four:last-child {
+  padding-right: 0;
+}
+
+.popular .most-popular {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 24px;
+  padding-right: 20px;
+}
+
+.most-popular .content .details ul {
+  height: 30px;
+}
+
+.most-popular .content .img {
+  position: relative;
+}
+
+.most-popular .info .content-info {
+  display: flex;
+  height: 80px;
+  background: #fff4f2;
+}
+
+.most-popular .info .content-info div:first-child {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.most-popular .info .content-info div:first-child small {
+  color: #f42;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.most-popular .info .content-info div:first-child strong {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.most-popular .info .content-info div:last-child {
+  flex: 2;
+}
+
+.section-container .latest-deals {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-container .latest-deals .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container .latest-deals .is-flex-four .content .info,
+.section-container .latest-deals .is-flex-four .content .info div {
+  margin-top: 5px;
+}
+
+.section-container .latest-deals .is-flex-four .content .info a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.section-container .latest-deals .is-flex-four .content .info a:hover {
+  color: #f42;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.section-container .latest-deals .is-flex-four .content .info div small {
+  color: #555;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+.section-container .latest-deals .is-flex-four {
+  padding: 0 20px 20px 0;
+}
+
+.footer {
+  background: #131313;
+  margin-top: 100px;
+}
+
+.footer .media {
+  margin-bottom: 15px;
+}
+
+.footer .menu-links {
+  list-style: none;
+}
+
+.footer-media {
+  padding: 3em 0 2em;
+}
+
+.footer-details {
+  background: #000;
+  height: 100px;
+}
+
+.footer-details .wrapper span {
+  font-size: 0.7em;
+  color: #aaa;
+}
+
+@media (max-width: 1024px) {
+  .latest-founding h2,
+  .popular article h2 {
+    color: #f42 !important;
+  }
+
+  .hero-container .cover .is-one h2 {
+    font-size: 23px;
+  }
+
+  .is-flex-four {
+    flex-basis: 33.3%;
+    max-width: 33.33%;
+  }
+
+  .section-container .latest-founding {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .latest-founding .nav-menu ul {
+    list-style: none;
+  }
+
+  .section-container .latest-founding .nav-menu ul {
+    justify-content: flex-start;
+  }
+
+  .latest-founding-items div:nth-child(4) {
+    display: none;
+  }
+
+  .popular .most-popular {
+    width: 50%;
+  }
+
+  .navbar-container .logo {
+    width: 115px;
+    display: block;
+  }
+
+  .hero-container .cover .is-four .details h2 {
+    font-size: 2.5em;
+  }
+
+  .hero-container .cover .is-two .details h2 {
+    font-size: 1.3em;
+  }
+
+  .wrapper .section-container .latest-news article:nth-child(3) .content,
+  .wrapper .section-container .latest-news article:nth-child(6) .content {
+    padding-right: 0;
+  }
+
+  .latest-news div h6 {
+    font-size: 0.9em;
+  }
+
+  .section-container .latest-founding .nav-menu ul li:first-child {
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar-container .navbar-primary .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .is-flex-four {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .latest-news .is-flex-four,
+  .latest-news div,
+  .latest-news .img {
+    height: 80px;
+  }
+
+  .flex-end .menu-icons div,
+  .flex-end .menu-icons a {
+    border-left: 1px solid #eee;
+  }
+
+  .navbar-primary,
+  .navbar-section {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+    height: 80px;
+  }
+
+  .header-container,
+  .navbar-container,
+  .navbar-container .logo,
+  .navbar-container .logo img {
+    height: 45px;
+  }
+
+  .navbar-container .logo {
+    width: 115px;
+  }
+
+  .navbar-container .logo img {
+    width: 100%;
+  }
+
+  .hero-container .cover {
+    flex-direction: column;
+    height: 1250px;
+  }
+
+  .hero-container .cover article.is-four,
+  .hero-container .cover div {
+    flex: none;
+    flex-basis: 245px;
+  }
+
+  .hero-container .cover article.is-one {
+    flex-basis: 245px;
+  }
+
+  .latest-news .img {
+    max-width: 800 80px;
+  }
+
+  .latest-news .info {
+    padding: 0 10px;
+  }
+
+  .section-container .latest-news .content,
+  .section-container .latest-deals .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-container .latest-news .content .img,
+  .section-container .latest-deals .content .img {
+    flex: 1;
+    background: royalblue;
+  }
+
+  .section-container .latest-news .content .info,
+  .section-container .latest-deals .content .info {
+    flex: 5;
+  }
+
+  .section-container .latest-founding .nav-menu ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .popular .most-popular {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer .wrapper {
+    max-width: 400px;
+  }
+
+  .navbar-containe {
+    height: 80px;
+  }
+
+  .section-container .latest-founding h2 {
+    margin-bottom: 0;
+  }
+
+  .hero-container .cover .is-four .details h2,
+  .hero-container .cover .is-two .details h2 {
+    font-size: 1.3em;
+  }
+
+  .latest-news .is-flex-four {
+    margin: 10px 0;
+  }
+
+  .latest-news .img img {
+    height: 100%;
+  }
+
+  .latest-news .padd_right10 {
+    padding-right: 0;
+  }
+
+  .footer .media li {
+    margin: 0 5px;
+  }
+
+  .section-container .latest-founding .nav-menu ul li {
+    padding: 0;
+    margin-bottom: 7px;
+  }
+
+  .latest-founding-items .is-flex-four {
+    padding-bottom: 20px;
+  }
+
+  .latest-founding-items .is-flex-four header img {
+    top: 31px;
+  }
+
+  .most-popular .content .first img,
+  .most-popular .content .first {
+    height: 70vw;
+  }
+
+  .most-popular .content .details {
+    top: 85%;
+  }
+
+  .most-popular .info .content-info div:first-child {
+    flex: 8;
+  }
+
+  .section-container .latest-deals .is-flex-four .content .img {
+    margin-right: 20px;
+  }
+
+  .footer-details .wrapper {
+    text-align: center;
+    width: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-container .cover {
+    height: 1050px;
+  }
+
+  .most-popular .content .details {
+    top: 73%;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-container .cover {
+    height: 900px;
+  }
+}
